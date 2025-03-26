@@ -38,4 +38,11 @@ public class AirlineService {
                 .collect(Collectors.toList());
     }
 
+    public List<Airline> findBySourceAndDestination(String source, String destination){
+        return jpaStreamer.stream(Airline.class)
+                .filter((airline) -> (airline.getSource().equals(source))
+                        && (airline.getDestination().equals(destination)))
+                .collect(Collectors.toList());
+    }
+
 }

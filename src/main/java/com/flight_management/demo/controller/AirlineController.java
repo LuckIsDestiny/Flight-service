@@ -35,4 +35,11 @@ public class AirlineController {
         return ResponseEntity.ok().body(airlineService.findBySourceAndDate(source, date));
     }
 
+    @GetMapping("/findFlightFrom/{source}/to/{destination}")
+    public ResponseEntity<List<Airline>> findBySourceDestinationAndDate(
+            @PathVariable("source") String source,
+            @PathVariable("destination") String destination) {
+        return ResponseEntity.ok().body(airlineService.findBySourceAndDestination(source, destination));
+    }
+
 }
