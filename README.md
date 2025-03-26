@@ -68,8 +68,3 @@ GET /airline/findFlightFrom/{source}/to/{destination}
 ```
 GET /airline/findFlightFrom/CXB/to/CCU
 ```
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-
