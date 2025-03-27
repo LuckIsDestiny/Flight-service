@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.flight-management</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
-	<name>demo</name>
+	<packaging>jar</packaging>
+	<name>app</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -60,6 +60,11 @@
 			<groupId>com.speedment.jpastreamer.integration.spring</groupId>
 			<artifactId>spring-boot-jpastreamer-autoconfigure</artifactId>
 			<version>3.0.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-csv</artifactId>
+			<version>1.9.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springdoc</groupId>
@@ -122,7 +127,7 @@
 			</plugin>
 
 		</plugins>
-		<finalName>emp-service</finalName>
+		<finalName>airline-service</finalName>
 	</build>
 
 </project>
